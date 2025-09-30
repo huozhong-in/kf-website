@@ -1,12 +1,19 @@
 import { Hono } from 'hono'
 import { renderer } from './renderer'
+import { LandingPage } from './components/LandingPage'
+import { ClientScript } from './components/ClientScript'
 
 const app = new Hono<{ Bindings: CloudflareBindings }>();
 
 app.use(renderer)
 
 app.get('/', (c) => {
-  return c.render(<h1>Hello!</h1>)
+  return c.render(
+    <>
+      <LandingPage />
+      <ClientScript />
+    </>
+  )
 })
 
 app.get('/privacy-policy', (c) => {

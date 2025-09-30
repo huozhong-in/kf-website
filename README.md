@@ -1,21 +1,11 @@
-```txt
-npm install
-npm run dev
-```
+# 项目介绍
 
-```txt
-npm run deploy
-```
+本项目作为[Knowledge Focus](https://github.com/huozhong-in/knowledge-focus) 本地知识库和桌面智能体平台的官网项目，具有以下功能
 
-[For generating/synchronizing types based on your Worker configuration run](https://developers.cloudflare.com/workers/wrangler/commands/#types):
+## 品牌展示和功能宣传
 
-```txt
-npm run cf-typegen
-```
+- [PRD文档](docs/PRD.md)
 
-Pass the `CloudflareBindings` as generics when instantiation `Hono`:
+## VIP支付功能和相关数据查看
 
-```ts
-// src/index.ts
-const app = new Hono<{ Bindings: CloudflareBindings }>()
-```
+## 登录界面和OAuth的跳转页
