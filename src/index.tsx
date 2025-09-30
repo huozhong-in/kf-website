@@ -9,4 +9,12 @@ app.get('/', (c) => {
   return c.render(<h1>Hello!</h1>)
 })
 
+app.get('/privacy-policy', (c) => {
+  return c.redirect('/static/privacy-policy-terms-of-service.html')
+})
+
+app.get('/terms-of-service', (c) => {
+  return c.redirect('/static/privacy-policy-terms-of-service.html')
+})
+
 export default app

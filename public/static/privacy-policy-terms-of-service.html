@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge-Focus: Privacy Policy & Terms of Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Warm Neutral Tones -->
+    <!-- Application Structure Plan: A two-column layout with a sticky sidebar for navigation and a main content area for the text. The sidebar allows users to quickly jump to any section of the Privacy Policy or Terms of Service via smooth scrolling. This structure was chosen to enhance the readability and navigability of a dense, text-based document, making it easier for users to find the information they need without complex interactions. Key interaction is the navigation itself, with active section highlighting on scroll. -->
+    <!-- Visualization & Content Choices: Content is purely textual. Goal: Inform. Presentation: Structured HTML with high-readability typography (Tailwind CSS `prose`). Interaction: The primary interaction is a Vanilla JS-powered smooth-scrolling navigation sidebar that highlights the current section. This turns a static document into an easily explorable one. No charts or diagrams are needed as there is no quantitative data. Library/Method: Vanilla JS, Tailwind CSS. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f7f2;
+        }
+        .prose h1, .prose h2, .prose h3 {
+            color: #1e293b;
+            scroll-margin-top: 4rem;
+        }
+        .prose a {
+            color: #c2410c;
+            text-decoration: none;
+        }
+        .prose a:hover {
+            text-decoration: underline;
+        }
+        .sidebar-link {
+            transition: all 0.2s ease-in-out;
+            border-left: 2px solid transparent;
+        }
+        .sidebar-link.active {
+            color: #c2410c;
+            font-weight: 600;
+            border-left-color: #c2410c;
+            transform: translateX(4px);
+        }
+    </style>
+</head>
+<body class="text-slate-700 antialiased">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+            <aside class="hidden lg:block lg:col-span-3 py-6 lg:sticky lg:top-0 lg:self-start h-screen overflow-y-auto">
+                <nav id="sidebar-nav" class="space-y-4">
+                    <div>
+                        <h3 class="text-sm font-semibold text-slate-900 tracking-wide mb-2">Privacy Policy</h3>
+                        <ul class="space-y-1 text-sm text-slate-600">
+                            <li><a href="#privacy-policy" class="sidebar-link block p-2 hover:text-slate-900">Introduction</a></li>
+                            <li><a href="#privacy-local" class="sidebar-link block p-2 hover:text-slate-900">1. Local First</a></li>
+                            <li><a href="#privacy-not-collect" class="sidebar-link block p-2 hover:text-slate-900">2. What We Don't Collect</a></li>
+                            <li><a href="#privacy-consent" class="sidebar-link block p-2 hover:text-slate-900">3. With Your Consent</a></li>
+                            <li><a href="#privacy-security" class="sidebar-link block p-2 hover:text-slate-900">4. Data Security</a></li>
+                            <li><a href="#privacy-children" class="sidebar-link block p-2 hover:text-slate-900">5. Children's Privacy</a></li>
+                            <li><a href="#privacy-changes" class="sidebar-link block p-2 hover:text-slate-900">6. Policy Changes</a></li>
+                            <li><a href="#privacy-contact" class="sidebar-link block p-2 hover:text-slate-900">7. Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-slate-900 tracking-wide mb-2">Terms of Service</h3>
+                        <ul class="space-y-1 text-sm text-slate-600">
+                            <li><a href="#terms-of-service" class="sidebar-link block p-2 hover:text-slate-900">Introduction</a></li>
+                            <li><a href="#terms-acceptance" class="sidebar-link block p-2 hover:text-slate-900">1. Acceptance of Terms</a></li>
+                            <li><a href="#terms-license" class="sidebar-link block p-2 hover:text-slate-900">2. License to Use</a></li>
+                            <li><a href="#terms-as-is" class="sidebar-link block p-2 hover:text-slate-900">3. "As Is" Service</a></li>
+                            <li><a href="#terms-responsibilities" class="sidebar-link block p-2 hover:text-slate-900">4. User Responsibilities</a></li>
+                            <li><a href="#terms-ip" class="sidebar-link block p-2 hover:text-slate-900">5. Intellectual Property</a></li>
+                            <li><a href="#terms-paid" class="sidebar-link block p-2 hover:text-slate-900">6. Paid Services</a></li>
+                            <li><a href="#terms-termination" class="sidebar-link block p-2 hover:text-slate-900">7. Termination</a></li>
+                            <li><a href="#terms-changes" class="sidebar-link block p-2 hover:text-slate-900">8. Terms Changes</a></li>
+                            <li><a href="#terms-law" class="sidebar-link block p-2 hover:text-slate-900">9. Governing Law</a></li>
+                            <li><a href="#terms-contact" class="sidebar-link block p-2 hover:text-slate-900">10. Contact Us</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </aside>
+
+            <main class="lg:col-span-9 py-6">
+                <article class="prose max-w-none prose-slate">
+                    <h1 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Knowledge-Focus: Privacy Policy & Terms of Service</h1>
+                    <p class="text-slate-600"><strong>Last Updated:</strong> September 29, 2025</p>
+                    <p>This document contains two parts: the Privacy Policy, which explains what data Knowledge-Focus (also "KF", "the App") does and does not collect, and the Terms of Service, which outline the rules for using our application.</p>
+                    <p>By using Knowledge-Focus, you agree to both this Privacy Policy and the Terms of Service.</p>
+
+                    <section id="privacy-policy">
+                        <h2 class="font-bold text-2xl mt-12 mb-6 border-b pb-2">Privacy Policy</h2>
+                        <div class="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-lg mb-6">
+                            <h3 class="font-semibold text-amber-900">Quick Summary</h3>
+                            <p class="text-amber-800 text-sm">Your privacy is our priority. Knowledge-Focus works locally on your device. We do not collect or transmit your files or personal data. Optional features that connect to third-party services require your explicit consent and are governed by their own policies.</p>
+                        </div>
+                        <p>Your privacy is the foundation of Knowledge-Focus. Our goal is to provide a powerful tool that operates entirely on your device.</p>
+                        
+                        <h3 id="privacy-local">1. The Core Principle: Local First</h3>
+                        <p>Knowledge-Focus is designed to be a local-first application. The core functionality of scanning, indexing, searching, and managing your files happens exclusively on your computer.</p>
+
+                        <h3 id="privacy-not-collect">2. Information We Do <strong>NOT</strong> Collect or Transmit</h3>
+                        <p>We want to be crystal clear about what we <strong>do not</strong> do. By default, the App <strong>does not and will not ever</strong>:</p>
+                        <ul>
+                            <li>Read the content of your files for any purpose other than local indexing and analysis as initiated by you.</li>
+                            <li>Transmit your file contents, file names, or any data derived from them to our servers or any third party.</li>
+                            <li>Collect personal information such as your name, email address, or location.</li>
+                            <li>Track your activity across other applications or websites.</li>
+                        </ul>
+
+                        <h3 id="privacy-consent">3. Information We May Process (With Your Explicit Consent)</h3>
+                        <p>Some advanced features are optional and require you to explicitly enable them. These are the only circumstances under which any data leaves your device.</p>
+                        <h4>Third-Party LLM API Integration:</h4>
+                        <p>The App allows you to connect to third-party Large Language Model (LLM) services (e.g., OpenAI, Anthropic, Google) using your own API key.</p>
+                        <ul>
+                            <li><strong>What is Sent:</strong> When you use a feature powered by this integration (like generating tags from file content), a snippet of your file's text content and its path may be sent directly to the third-party service you configured.</li>
+                            <li><strong>Our Role:</strong> We are a conduit in this process. Your data is sent from the App on your device directly to the third-party provider. It does not pass through our servers.</li>
+                            <li><strong>Your Responsibility:</strong> Your use of these third-party services is governed by their respective privacy policies. We strongly encourage you to review them.</li>
+                        </ul>
+                        <h4>Anonymous Usage Analytics (Optional):</h4>
+                        <p>To help us improve the App, we may ask for your permission to collect completely anonymous and aggregated usage data.</p>
+                        <ul>
+                            <li><strong>What is Collected:</strong> This may include information like which features are used most often, application performance data, and crash reports.</li>
+                            <li><strong>Anonymity:</strong> This data contains no personally identifiable information and cannot be linked back to you or your files.</li>
+                            <li><strong>Control:</strong> This feature will be opt-in, meaning we will not collect this data unless you explicitly agree.</li>
+                        </ul>
+
+                        <h3 id="privacy-security">4. Data Security</h3>
+                        <p>Since all your primary data is stored locally on your device, the security of your data is directly tied to the security of your computer. We are not responsible for unauthorized access to your computer. For optional features requiring an API key, we store the key securely in your operating system's keychain or equivalent secure storage.</p>
+
+                        <h3 id="privacy-children">5. Children's Privacy</h3>
+                        <p>The App is not intended for use by children under the age of 13. We do not knowingly collect any personal information from children.</p>
+
+                        <h3 id="privacy-changes">6. Changes to This Privacy Policy</h3>
+                        <p>We may update this policy from time to time. We will notify you of any significant changes by posting the new policy within the App or on our website.</p>
+                        
+                        <h3 id="privacy-contact">7. Contact Us</h3>
+                        <p>If you have any questions about this Privacy Policy, please contact us at <code>finalboy[at]gmail.com</code>.</p>
+                    </section>
+                    
+                    <section id="terms-of-service">
+                        <h2 class="font-bold text-2xl mt-16 mb-6 border-b pb-2">Terms of Service</h2>
+                         <div class="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-lg mb-6">
+                            <h3 class="font-semibold text-amber-900">Quick Summary</h3>
+                            <p class="text-amber-800 text-sm">Knowledge-Focus is provided "as is," and you use it at your own risk. You are responsible for your own data, including backups and the legality of your content. Optional paid services may be offered in the future under additional terms.</p>
+                        </div>
+                        <p>Thank you for using Knowledge-Focus! These terms govern your use of our application.</p>
+                        
+                        <h3 id="terms-acceptance">1. Acceptance of Terms</h3>
+                        <p>By downloading, installing, or using the Knowledge-Focus application ("the App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the App.</p>
+
+                        <h3 id="terms-license">2. License to Use the App</h3>
+                        <p>We grant you a limited, non-exclusive, non-transferable, revocable license to use the App for your personal or internal business purposes, strictly in accordance with these Terms.</p>
+
+                        <h3 id="terms-as-is">3. The Application is Provided "As Is"</h3>
+                        <p>The App is provided "as is" and "as available," without any warranties of any kind, express or implied. We do not warrant that the App will be error-free, secure, or uninterrupted. You use it at your own risk.</p>
+                        <p><strong>Limitation of Liability:</strong> To the fullest extent permitted by law, in no event will we or our affiliates be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the App.</p>
+
+                        <h3 id="terms-responsibilities">4. User Responsibilities</h3>
+                        <ul>
+                            <li><strong>Data Backup:</strong> You are solely responsible for backing up your files. While KF indexes your files, it is not a backup service. We are not responsible for the loss of any data.</li>
+                            <li><strong>Content:</strong> You are responsible for the legality and appropriateness of the files you manage with the App.</li>
+                            <li><strong>API Keys and Third-Party Services:</strong> If you choose to use optional features that connect to third-party services, you are responsible for securing your API keys and for all charges and activities associated with your use of those services.</li>
+                        </ul>
+
+                        <h3 id="terms-ip">5. Intellectual Property</h3>
+                        <p>The App, including its original content, features, and functionality, are and will remain the exclusive property of <code>Dio Chou</code> and its licensors.</p>
+
+                        <h3 id="terms-paid">6. Optional Paid Services ("VIP Services")</h3>
+                        <p>We may, now or in the future, offer optional paid services or features. Your use of such services will be subject to additional terms and conditions, which you will be asked to agree to before you are charged.</p>
+
+                        <h3 id="terms-termination">7. Termination</h3>
+                        <p>You may stop using the App at any time. We reserve the right to suspend or terminate your access to the App at any time, with or without cause or notice, for any reason, including if you breach these Terms.</p>
+
+                        <h3 id="terms-changes">8. Changes to These Terms</h3>
+                        <p>We may modify these Terms from time to time. We will provide notice of significant changes within the App. By continuing to use the App after changes become effective, you agree to be bound by the revised Terms.</p>
+
+                        <h3 id="terms-law">9. Governing Law</h3>
+                        <p>These Terms shall be governed by the laws of <code>U.S.A.</code>, without regard to its conflict of law provisions.</p>
+                        
+                        <h3 id="terms-contact">10. Contact Us</h3>
+                        <p>If you have any questions about these Terms, please contact us at <code>finalboy[at]gmail.com</code>.</p>
+                    </section>
+                </article>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('main section[id], main h3[id]');
+            const navLinks = document.querySelectorAll('#sidebar-nav a');
+
+            if (!sections.length || !navLinks.length) return;
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px 0px -80% 0px',
+                threshold: 0
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    const id = entry.target.getAttribute('id');
+                    const correspondingLink = document.querySelector(`#sidebar-nav a[href="#${id}"]`);
+                    if (entry.isIntersecting) {
+                        navLinks.forEach(link => link.classList.remove('active'));
+                        if (correspondingLink) {
+                            correspondingLink.classList.add('active');
+                        }
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    const href = link.getAttribute('href');
+                    if (href && href.startsWith('#')) {
+                        e.preventDefault();
+                        const targetElement = document.getElementById(href.substring(1));
+                        if(targetElement) {
+                            targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
