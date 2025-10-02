@@ -15,6 +15,9 @@ export interface Env {
   // Better-Auth 会用到的变量
   BETTER_AUTH_SECRET?: string;
   BETTER_AUTH_URL?: string;
+  
+  // Python API 地址
+  PYTHON_API_URL?: string;
 }
 
 // Cloudflare Bindings 类型

@@ -104,7 +104,7 @@ pnpm run build
 
 ```bash
 # 部署到 Cloudflare Pages
-pnpm wrangler pages deploy dist --project-name=kf-auth-server
+pnpm wrangler pages deploy dist --project-name=kf-website
 
 # 或者使用 npm script (如果已配置)
 pnpm run deploy
@@ -156,14 +156,14 @@ curl https://kf.huozhong.in/health
 bun run build
 
 # 2. 部署
-wrangler pages deploy dist --project-name=kf-auth-server
+wrangler pages deploy dist --project-name=kf-website
 ```
 
 ## 📊 监控和日志
 
 ### 查看实时日志
 ```bash
-wrangler pages deployment tail --project-name=kf-auth-server
+wrangler pages deployment tail --project-name=kf-website
 ```
 
 ### D1 数据库查询
