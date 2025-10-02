@@ -9,3 +9,5 @@
 ## VIP支付功能和相关数据查看
 
 ## 登录界面和OAuth的跳转页
+
+见[文档](/docs/README-AUTH-SERVER.md)
