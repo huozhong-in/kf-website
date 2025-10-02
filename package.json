@@ -7,7 +7,6 @@
 		"preview": "vite build && wrangler pages dev",
 		"deploy": "pnpm run build && wrangler pages deploy",
 		"deploy:prod": "bun run build && wrangler pages deploy --project-name=kf-auth-server --branch=production",
-		"setup:d1": "./scripts/setup-d1-database.sh",
 		"logs:prod": "wrangler pages deployment tail --project-name=kf-auth-server",
 		"db:query": "wrangler d1 execute knowledge-focus-db --remote",
 		"cf-typegen": "wrangler types --env-interface CloudflareBindings"
@@ -27,6 +26,6 @@
 		"drizzle-kit": "^0.31.5",
 		"tsx": "^4.20.6",
 		"vite": "^6.3.5",
-		"wrangler": "^4.40.2"
+		"wrangler": "4.41.0"
 	}
 }
