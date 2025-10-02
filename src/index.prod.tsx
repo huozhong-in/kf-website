@@ -1,6 +1,7 @@
 import { Hono } from 'hono'
 import { cors } from 'hono/cors'
 import type { Env } from './env.d'
+import { renderer } from './renderer'
 import { LandingPage } from './components/LandingPage'
 import { ClientScript } from './components/ClientScript'
 // 生产环境: 使用 Cloudflare D1
@@ -60,7 +61,7 @@ export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const app = new Hono<{ Bindings: Env }>();
     const auth = createProdAuth(env);
-
+    app.use(renderer)
     // CORS配置
     app.use('*', cors({
       origin: [
